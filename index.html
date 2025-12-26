@@ -1,62 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Ouleymatou KONE KANTE</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #0d1117;
-      color: #c9d1d9;
-      max-width: 800px;
-      margin: auto;
-      padding: 40px 20px;
-    }
-    h1 {
-      color: #ffffff;
-      font-size: 2.5em;
-    }
-    h2 {
-      margin-top: 40px;
-      color: #58a6ff;
-    }
-    a {
-      color: #58a6ff;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    ul {
-      padding-left: 20px;
-    }
-  </style>
+    <meta charset="UTF-8" />
+    <title>CV - Ouleymatou KONE KANTE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        /* --- STYLE GLOBAL (Thème GitHub Dark) --- */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            background-color: #0d1117; /* Fond très sombre */
+            color: #c9d1d9; /* Texte gris clair lisible */
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            line-height: 1.6;
+        }
+
+        /* --- TITRES --- */
+        h1 {
+            color: #ffffff;
+            font-size: 2.5em;
+            margin-bottom: 0.2em;
+            border-bottom: 1px solid #30363d;
+            padding-bottom: 20px;
+        }
+        h2 {
+            margin-top: 50px;
+            color: #58a6ff; /* Bleu GitHub */
+            border-bottom: 1px solid #30363d;
+            padding-bottom: 10px;
+        }
+        h3 {
+            color: #ffffff;
+            font-size: 1.2em;
+            margin-bottom: 5px;
+        }
+
+        /* --- LIENS --- */
+        a {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* --- SECTIONS PROJETS (Cartes) --- */
+        .project-card {
+            border: 1px solid #30363d;
+            background-color: #161b22; /* Fond légèrement plus clair que le body */
+            padding: 20px;
+            border-radius: 6px;
+            margin-bottom: 20px;
+        }
+        .project-tech {
+            font-size: 0.9em;
+            color: #8b949e;
+            font-style: italic;
+        }
+
+        /* --- TAGS COMPETENCES --- */
+        .skill-tag {
+            display: inline-block;
+            background-color: #21262d;
+            border: 1px solid #30363d;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            margin-right: 5px;
+            margin-bottom: 5px;
+            color: #58a6ff;
+        }
+
+        /* --- SOUS-TITRES ET DATES --- */
+        .subtitle {
+            font-size: 1.1em;
+            color: #8b949e;
+            margin-bottom: 20px;
+        }
+        .date {
+            float: right;
+            font-size: 0.9em;
+            color: #8b949e;
+        }
+    </style>
 </head>
+
 <body>
 
-  <h1>Ouleymatou KONE KANTE</h1>
-  <p><strong>Student in AI & Organizational Sciences – Paris Dauphine</strong></p>
+    <h1>Ouleymatou KONE KANTE</h1>
+    <p class="subtitle">Student in AI & Organizational Sciences – Paris Dauphine</p>
+    
+    <p>
+        <a href="https://github.com/yelouk">GitHub</a> | 
+        <a href="#">LinkedIn</a> | 
+        <a href="mailto:votre-email@exemple.com">Email</a>
+    </p>
 
-  <h2>About</h2>
-  <p>
-    I am a student with a strong interest in data analysis and machine learning,
-    with a background in management and pricing analysis.
-    I am currently seeking an alternance or master program in data-related fields.
-  </p>
+    <h2>About Me</h2>
+    <p>
+        Student with a strong interest in <strong>data analysis</strong> and <strong>machine learning</strong>, 
+        combining a background in management with technical skills. 
+        Currently seeking an apprenticeship (alternance) or master program in data-related fields starting September 2025.
+    </p>
 
-  <h2>Projects</h2>
-  <ul>
-    <li>Pricing optimization using machine learning</li>
-    <li>Management accounting analysis in Python</li>
-    <li>Machine learning fundamentals</li>
-  </ul>
+    <h2>Education</h2>
+    
+    <div class="project-card">
+        <span class="date">2023 - Present</span>
+        <h3>Université Paris Dauphine - PSL</h3>
+        <p class="project-tech">Master / Licence in AI & Organizational Sciences</p>
+        <ul>
+            <li>Focus: Data Science, Algorithms, Management Strategy.</li>
+            <li>Key Courses: Python for Data Analysis, Linear Algebra, Statistics.</li>
+        </ul>
+    </div>
 
-  <h2>Contact</h2>
-  <p>
-    <a href="https://github.com/yelouk">GitHub</a> |
-    <a href="https://www.linkedin.com/">LinkedIn</a>
-  </p>
+    <h2>Academic & Personal Projects</h2>
+
+    <div class="project-card">
+        <h3>Pricing Optimization with Machine Learning</h3>
+        <p class="project-tech">Tech stack: Python, Scikit-Learn, Pandas</p>
+        <p>
+            Developed a model to predict optimal pricing strategies based on historical sales data.
+        </p>
+        <ul>
+            <li>Cleaned and pre-processed a dataset of over 10,000 entries.</li>
+            <li>Implemented regression algorithms to forecast demand elasticity.</li>
+            <li>Result: Improved theoretical margin by 5% in simulation.</li>
+        </ul>
+    </div>
+
+    <div class="project-card">
+        <h3>Management Accounting Analysis</h3>
+        <p class="project-tech">Tech stack: Python, Excel, Matplotlib</p>
+        <p>
+            Automated the analysis of financial reports to identify cost-saving opportunities.
+        </p>
+        <ul>
+            <li>Created Python scripts to automate data extraction from Excel files.</li>
+            <li>Visualized cost distribution using Matplotlib charts.</li>
+        </ul>
+    </div>
+
+    <h2>Technical Skills</h2>
+    <div>
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">Data Analysis</span>
+        <span class="skill-tag">Machine Learning</span>
+        <span class="skill-tag">SQL</span>
+        <span class="skill-tag">Git & GitHub</span>
+        <span class="skill-tag">English (Fluent)</span>
+        <span class="skill-tag">French (Native)</span>
+    </div>
+
+    <br><br>
+    <footer style="text-align: center; color: #8b949e; font-size: 0.8em;">
+        &copy; 2025 Ouleymatou KONE KANTE - Hosted on GitHub Pages
+    </footer>
 
 </body>
 </html>

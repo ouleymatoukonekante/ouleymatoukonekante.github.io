@@ -2,238 +2,323 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8" />
-    <title>Ouleymatou - Portfolio</title>
+    <title>Portfolio - Ouleymatou KONE KANTE</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     
     <style>
-        /* --- ESTHÉTIQUE PASTEL & WAW --- */
+        /* --- CHARTE GRAPHIQUE PASTEL PRO --- */
         :root {
-            --bg-color: #fff0f5; /* Rose très pâle (Lavender Blush) */
+            --bg-color: #fdf6f9; /* Rose très pâle, presque blanc */
             --card-bg: #ffffff;
-            --text-main: #555;
-            --text-title: #333;
-            --accent-pink: #ffb7b2;
-            --accent-purple: #e0bbe4;
-            --gradient: linear-gradient(135deg, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
+            --text-dark: #2d3436;
+            --text-gray: #636e72;
+            --accent-pink: #e8a6ae; /* Vieux rose élégant */
+            --accent-soft: #fce4ec;
+            --accent-purple: #dcd6f7;
+            --gradient-text: linear-gradient(90deg, #d66d75, #e29587);
         }
 
         body {
             font-family: 'Poppins', sans-serif;
-            background: linear-gradient(to bottom right, #fff0f5, #f3e5f5); /* Dégradé subtil fond */
-            color: #555;
+            background-color: var(--bg-color);
+            color: var(--text-dark);
             margin: 0;
             padding: 40px 20px;
-            line-height: 1.7;
+            line-height: 1.8;
         }
 
         .container {
-            max-width: 800px;
+            max-width: 850px;
             margin: 0 auto;
         }
 
-        /* --- EN-TÊTE --- */
+        /* --- HEADER --- */
         header {
             text-align: center;
-            margin-bottom: 60px;
+            margin-bottom: 70px;
         }
 
         h1 {
-            font-size: 3em;
+            font-size: 2.8em;
             margin-bottom: 10px;
-            /* Effet WAW : Texte en dégradé */
-            background: -webkit-linear-gradient(45deg, #ff9a9e, #c77dff);
+            background: var(--gradient-text);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             font-weight: 600;
+            letter-spacing: -1px;
         }
 
         .subtitle {
-            font-size: 1.2em;
-            color: #888;
-            font-weight: 300;
-        }
-
-        .social-links a {
-            color: #ff9a9e;
-            text-decoration: none;
-            margin: 0 10px;
-            font-weight: 600;
-            transition: 0.3s;
-        }
-        .social-links a:hover {
-            color: #c77dff;
-        }
-
-        /* --- INTRO --- */
-        .intro-box {
-            background: white;
-            padding: 30px;
-            border-radius: 20px;
-            box-shadow: 0 10px 25px rgba(255, 183, 178, 0.2); /* Ombre rose douce */
-            text-align: center;
-            margin-bottom: 50px;
-        }
-
-        h2 {
-            color: #444;
-            font-size: 1.5em;
-            margin-top: 50px;
-            margin-bottom: 20px;
-            border-left: 5px solid #ffb7b2; /* Petite barre rose à gauche */
-            padding-left: 15px;
-        }
-
-        /* --- CARTES PROJETS (STYLE SOFT) --- */
-        .project-card {
-            background: white;
-            border-radius: 20px;
-            padding: 30px;
-            margin-bottom: 30px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.03);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            border: 1px solid #fff;
-        }
-
-        .project-card:hover {
-            transform: translateY(-5px); /* La carte monte un peu */
-            box-shadow: 0 15px 30px rgba(255, 154, 158, 0.2);
-        }
-
-        .project-title {
-            color: #444;
-            font-size: 1.3em;
-            font-weight: 600;
-            margin-top: 0;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-
-        /* Badges colorés mignons */
-        .badge {
-            font-size: 0.75em;
-            padding: 5px 12px;
-            border-radius: 15px;
-            color: white;
-            background: #ffb7b2; /* Rose par défaut */
-            margin-left: 10px;
+            font-size: 1.1em;
+            color: var(--text-gray);
             font-weight: 400;
         }
 
-        .badge-luxe { background: linear-gradient(45deg, #c77dff, #ff9a9e); } /* Violet/Rose */
-        .badge-stikkuad { background: #95e1d3; } /* Vert menthe */
-        .badge-tech { background: #e0bbe4; } /* Lilas */
+        .contact-links {
+            margin-top: 20px;
+        }
+        .contact-links a {
+            color: var(--accent-pink);
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: 500;
+            border-bottom: 1px solid transparent;
+            transition: 0.3s;
+        }
+        .contact-links a:hover {
+            border-bottom: 1px solid var(--accent-pink);
+        }
 
-        .description {
-            color: #666;
+        /* --- INTRO & VISION --- */
+        .intro-section {
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(232, 166, 174, 0.15); /* Ombre douce rosée */
+            margin-bottom: 60px;
+            text-align: left;
+        }
+
+        h2 {
+            font-size: 1.6em;
+            color: var(--text-dark);
+            margin-top: 50px;
+            margin-bottom: 30px;
+            position: relative;
+            padding-left: 15px;
+        }
+        
+        h2::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 5px;
+            bottom: 5px;
+            width: 4px;
+            background: var(--accent-pink);
+            border-radius: 4px;
+        }
+
+        .intro-title {
+            font-size: 1.4em;
+            color: var(--text-dark);
+            margin-top: 0;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        /* Highlight pour l'alternance */
+        .highlight-box {
+            background: #fff0f3;
+            border-left: 4px solid #d66d75;
+            padding: 15px 20px;
+            margin-top: 20px;
+            border-radius: 0 10px 10px 0;
             font-size: 0.95em;
+            color: #5e3a3f;
+        }
+
+        /* --- PROJETS (STYLE CARTE ÉPURÉE) --- */
+        .project-card {
+            background: var(--card-bg);
+            border-radius: 16px;
+            padding: 35px;
+            margin-bottom: 35px;
+            border: 1px solid white;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px rgba(232, 166, 174, 0.2);
+        }
+
+        .project-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            margin-bottom: 15px;
+        }
+
+        .project-title {
+            font-size: 1.25em;
+            font-weight: 600;
+            color: var(--text-dark);
+            margin: 0;
+        }
+
+        .tags {
+            margin-top: 5px;
+        }
+
+        .tag {
+            display: inline-block;
+            font-size: 0.75em;
+            background-color: var(--accent-soft);
+            color: #88545d;
+            padding: 4px 10px;
+            border-radius: 20px;
+            margin-left: 5px;
+            font-weight: 500;
+        }
+        
+        /* Tag spécial Stikkuad */
+        .tag-green { background-color: #e0f2f1; color: #26a69a; }
+        /* Tag spécial Luxe/Perso */
+        .tag-purple { background-color: #f3e5f5; color: #8e24aa; }
+
+        p {
+            color: var(--text-gray);
+            margin-bottom: 10px;
         }
 
         /* --- FOOTER --- */
         footer {
             text-align: center;
             margin-top: 80px;
-            color: #aaa;
-            font-size: 0.8em;
+            font-size: 0.85em;
+            color: #b2bec3;
         }
     </style>
 </head>
 
 <body>
 
-<div class="container">
+    <div class="container">
 
-    <header>
-        <h1>Ouleymatou KONE KANTE</h1>
-        <div class="subtitle">IA & Stratégie • Paris Dauphine</div>
-        <div class="social-links" style="margin-top: 15px;">
-            <a href="https://github.com/yelouk">GitHub</a>
-            <a href="#">LinkedIn</a>
-            <a href="mailto:ton-email@gmail.com">Contact</a>
+        <header>
+            <h1>Ouleymatou KONE KANTE</h1>
+            <div class="subtitle">Étudiante en IA & Sciences des Organisations - Paris Dauphine</div>
+            <div class="contact-links">
+                <a href="https://github.com/yelouk">GitHub</a>
+                <a href="#">LinkedIn</a>
+                <a href="mailto:votre-email@gmail.com">Me contacter</a>
+            </div>
+        </header>
+
+        <div class="intro-section">
+            <h3 class="intro-title">De la donnée brute à des choix concrets</h3>
+            <p>
+                Ce que j’aime dans la data, ce n’est pas seulement écrire du code ou entraîner des modèles. C’est surtout le cheminement intellectuel : partir de données imparfaites, parfois désordonnées, et essayer d’en tirer quelque chose de compréhensible et d’utile.
+            </p>
+            <p>
+                Mon parcours en Sciences des Organisations et en Intelligence Artificielle m’a appris une chose essentielle : une analyse n’a de valeur que si elle peut être comprise et utilisée. J’essaie donc toujours de faire le lien entre la technique et les décisions réelles, en expliquant clairement ce que les données disent — et aussi ce qu’elles ne disent pas.
+            </p>
+            
+            <div class="highlight-box">
+                <strong>🎯 Objectif 2025 :</strong> Je souhaite poursuivre cette dynamique en intégrant un <strong>Master en Informatique et Data</strong> en alternance dès septembre prochain. Je recherche un poste de Data Scientist ou Data Analyst pour mettre ma double compétence au service de vos projets.
+            </div>
         </div>
-    </header>
 
-    <div class="intro-box">
-        <p style="font-size: 1.1em; color: #555;">
-            ✨ <strong>Ma philosophie ?</strong><br>
-            Je ne suis pas juste là pour coder. J'aime prendre des données brutes (et souvent chaotiques) pour en faire quelque chose de clair, d'utile et de beau. Je fais le pont entre les maths complexes et le monde réel.
-        </p>
-    </div>
+        <h2>Projets Data & Analyse</h2>
 
-    <h2>Mes Projets Data</h2>
-
-    <div class="project-card">
-        <div class="project-title">
-            Le Score de Désirabilité
-            <span class="badge badge-luxe">Projet Perso & Luxe</span>
+        <div class="project-card">
+            <div class="project-header">
+                <h3 class="project-title">Data Challenge Immobilier</h3>
+                <div class="tags">
+                    <span class="tag">Travail d'équipe</span>
+                    <span class="tag">Data cleaning</span>
+                </div>
+            </div>
+            <p><strong>Comprendre la donnée avant de la modéliser</strong></p>
+            <p>
+                Ce projet de groupe a été une vraie immersion dans la réalité du travail sur les données. Avant toute modélisation, <strong>nous avons</strong> dû passer du temps à comprendre ce que les données représentaient réellement.
+            </p>
+            <p>
+                <strong>On s'est surtout concentrés</strong> sur la phase de préparation : repérer les incohérences, traiter les valeurs manquantes et sélectionner des variables pertinentes. Chaque choix devait être réfléchi et justifié collectivement, notamment lors des restitutions orales. Ce projet <strong>nous a appris</strong> que la qualité du raisonnement en amont est souvent plus déterminante que le choix du modèle lui-même.
+            </p>
         </div>
-        <p class="description">
-            C'est mon projet coup de cœur. Je me suis demandé : <strong>"Peut-on mesurer la hype ?"</strong><br>
-            Les maisons de luxe reposent sur l'intuition. J'ai voulu y ajouter de la science. Je suis en train de créer un algorithme qui mélange des critères subjectifs (rareté, tendance) pour prédire si un produit va marcher. C'est ma façon de mixer Tech et Glamour.
-        </p>
-    </div>
 
-    <div class="project-card">
-        <div class="project-title">
-            Data Challenge Immobilier
-            <span class="badge badge-tech">Python</span>
+        <div class="project-card">
+            <div class="project-header">
+                <h3 class="project-title">IA Générative : Implémenter & Vulgariser</h3>
+                <div class="tags">
+                    <span class="tag">Papier de recherche</span>
+                    <span class="tag">GAN</span>
+                </div>
+            </div>
+            <p><strong>Du papier de recherche à l'explication orale</strong></p>
+            <p>
+                Ce projet de groupe s'ancrait au cœur de l'IA Générative. Notre objectif était technique et ambitieux : partir d'un papier de recherche scientifique pour implémenter et améliorer un modèle de <strong>GAN (Generative Adversarial Network)</strong>.
+            </p>
+            <p>
+                Mais le défi n'était pas seulement le code. <strong>Nous avons dû</strong> décortiquer l'architecture complexe du modèle pour la rendre accessible et la <strong>vulgariser</strong> à l'oral devant une classe d'étudiants. Cet exercice <strong>nous a prouvé</strong> qu'on ne maîtrise vraiment un sujet technique que lorsqu'on est capable de l'expliquer simplement.
+            </p>
         </div>
-        <p class="description">
-            On nous a donné un fichier Excel illisible avec des milliers de lignes pour prédire des prix.
-            La réalité ? 80% du travail, c'était du nettoyage. J'ai appris à trier le vrai du faux avant même de lancer les calculs. Au final, on a réussi à modéliser le marché, mais surtout à expliquer nos choix au jury.
-        </p>
-    </div>
 
-    <div class="project-card">
-        <div class="project-title">
-            L'IA Créative (GANs)
-            <span class="badge badge-tech">Recherche</span>
+        <div class="project-card">
+            <div class="project-header">
+                <h3 class="project-title">Score de Désirabilité (Luxe)</h3>
+                <div class="tags">
+                    <span class="tag tag-purple">Projet Perso</span>
+                    <span class="tag">Modélisation</span>
+                </div>
+            </div>
+            <p><strong>Construire un score à partir d’un concept abstrait</strong></p>
+            <p>
+                Ce projet part d’une curiosité personnelle : comment les maisons de luxe peuvent-elles utiliser la data sans perdre leur magie ?
+            </p>
+            <p>
+                Il n’y avait pas de données toutes faites. Mon travail a consisté à définir des critères pertinents (rareté, tendance), à réfléchir à leur importance relative et à construire une métrique cohérente. C’est un exercice de modélisation pure qui vise à transformer une idée qualitative en un outil d'aide à la décision.
+            </p>
         </div>
-        <p class="description">
-            Comment une IA peut-elle "inventer" des images ?
-            J'ai plongé dans la recherche sur les réseaux antagonistes (GAN). C'est très mathématique, mais mon but était de vulgariser ça : comprendre comment deux algorithmes "jouent" l'un contre l'autre pour créer de la nouveauté.
-        </p>
-    </div>
 
-    <div class="project-card">
-        <div class="project-title">
-            Dashboard Power BI
-            <span class="badge badge-tech">Visualisation</span>
+        <div class="project-card">
+            <div class="project-header">
+                <h3 class="project-title">Dashboard Power BI</h3>
+                <div class="tags">
+                    <span class="tag">Data Viz</span>
+                    <span class="tag">Synthèse</span>
+                </div>
+            </div>
+            <p><strong>Business Intelligence : rendre l’information lisible</strong></p>
+            <p>
+                Un tableau rempli de chiffres n’aide pas forcément à prendre une décision. Dans ce projet, mon objectif a été de transformer des données brutes en visualisations claires et parlantes.
+            </p>
+            <p>
+                Le travail ne consistait pas seulement à créer des graphiques, mais à faire des choix ergonomiques pour permettre une compréhension rapide. J’ai appris à simplifier sans perdre le sens.
+            </p>
         </div>
-        <p class="description">
-            Transformer des colonnes de chiffres en un tableau de bord clair.
-            L'objectif : qu'un décideur puisse regarder l'écran et comprendre la situation en 3 secondes chrono. J'adore ce côté "Design de l'information".
-        </p>
-    </div>
 
-    <h2>Mon Côté Entrepreneur</h2>
+        <h2>Expérience Entrepreneuriale</h2>
 
-    <div class="project-card" style="border-left: 5px solid #95e1d3;">
-        <div class="project-title">
-            Stikkuad
-            <span class="badge badge-stikkuad">Fondatrice</span>
+        <div class="project-card" style="border-left: 5px solid #a7d7c5;">
+            <div class="project-header">
+                <h3 class="project-title" style="color: #5aaaa0;">Stikkuad (2020 - 2023)</h3>
+                <div class="tags">
+                    <span class="tag tag-green">Fondatrice</span>
+                    <span class="tag tag-green">Leadership</span>
+                </div>
+            </div>
+            <p><strong>L'autodidacte et le terrain</strong></p>
+            <p>
+                Pendant trois ans, en parallèle de mes études, j'ai vécu une expérience unique en fondant ma propre entreprise. En totale <strong>autodidacte</strong>, j'ai appris à gérer un cycle de produit complet : de la conception et la manufacture, jusqu'à la livraison finale au client.
+            </p>
+            <p>
+                Cette aventure a développé mon leadership et m'a confrontée à la réalité du terrain : <strong>négociation avec les fournisseurs, gestion rigoureuse des stocks et tenue de la comptabilité</strong>. C'est une école de la responsabilité qui complète parfaitement ma formation universitaire.
+            </p>
         </div>
-        <p class="description">
-            Je ne fais pas que de la théorie. J'ai lancé ma propre micro-entreprise.
-            Gestion des stocks, relation client, comptabilité... C'est mon école du terrain. Ça m'apprend à gérer un business réel avec ses imprévus et ses réussites.
-        </p>
+
+        <div class="intro-section" style="margin-bottom: 0;">
+            <h3 class="intro-title" style="color: var(--accent-pink);">Expliquer, Argumenter, Transmettre</h3>
+            <p>
+                Pour moi, une analyse ne s’arrête pas à un résultat chiffré. Il faut aussi savoir l’expliquer, le défendre et répondre aux questions qu’il soulève.
+            </p>
+            <p>
+                Lors des projets et des présentations, j’accorde beaucoup d’importance à la clarté du discours. J’essaie de rendre les raisonnements accessibles, d’adapter mon vocabulaire à mon interlocuteur et de structurer mes idées à l’oral.
+            </p>
+        </div>
+
+        <footer>
+            &copy; 2025 Ouleymatou KONE KANTE - Portfolio
+        </footer>
+
     </div>
-
-    <h2>Ce qui fait la différence</h2>
-    <div class="intro-box" style="text-align: left; background: #fffafb;">
-        <p>
-            🗣 <strong>Je sais expliquer.</strong><br>
-            Sortir un chiffre, c'est bien. Savoir le vendre, c'est mieux. J'aime présenter mes projets, simplifier le jargon technique et convaincre mon auditoire. Pour moi, la communication est aussi importante que le code.
-        </p>
-    </div>
-
-    <footer>
-        🌸 Fait avec douceur par Ouleymatou © 2025
-    </footer>
-
-</div>
 
 </body>
 </html>
+     
+     

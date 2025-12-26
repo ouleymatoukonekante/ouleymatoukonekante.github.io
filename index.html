@@ -9,13 +9,13 @@
     <style>
         /* --- CHARTE GRAPHIQUE PASTEL PRO --- */
         :root {
-            --bg-color: #fdf6f9; /* Rose très pâle, presque blanc */
+            --bg-color: #fdf6f9; 
             --card-bg: #ffffff;
             --text-dark: #2d3436;
             --text-gray: #636e72;
-            --accent-pink: #e8a6ae; /* Vieux rose élégant */
+            --accent-pink: #e8a6ae; 
+            --accent-dark-pink: #d66d75;
             --accent-soft: #fce4ec;
-            --accent-purple: #dcd6f7;
             --gradient-text: linear-gradient(90deg, #d66d75, #e29587);
         }
 
@@ -75,7 +75,7 @@
             background: var(--card-bg);
             padding: 40px;
             border-radius: 20px;
-            box-shadow: 0 10px 40px rgba(232, 166, 174, 0.15); /* Ombre douce rosée */
+            box-shadow: 0 10px 40px rgba(232, 166, 174, 0.15); 
             margin-bottom: 60px;
             text-align: left;
         }
@@ -108,7 +108,6 @@
             font-weight: 600;
         }
 
-        /* Highlight pour l'alternance */
         .highlight-box {
             background: #fff0f3;
             border-left: 4px solid #d66d75;
@@ -164,15 +163,37 @@
             margin-left: 5px;
             font-weight: 500;
         }
-        
-        /* Tag spécial Stikkuad */
         .tag-green { background-color: #e0f2f1; color: #26a69a; }
-        /* Tag spécial Luxe/Perso */
         .tag-purple { background-color: #f3e5f5; color: #8e24aa; }
 
         p {
             color: var(--text-gray);
             margin-bottom: 10px;
+        }
+
+        /* --- NOUVEAU : BOUTON PDF --- */
+        .btn-pdf {
+            display: inline-flex;
+            align-items: center;
+            margin-top: 15px;
+            padding: 8px 16px;
+            background-color: var(--accent-pink);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-size: 0.85em;
+            font-weight: 500;
+            transition: 0.3s ease;
+        }
+        
+        .btn-pdf:hover {
+            background-color: var(--accent-dark-pink);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(214, 109, 117, 0.3);
+        }
+
+        .btn-pdf span {
+            margin-left: 8px;
         }
 
         /* --- FOOTER --- */
@@ -205,11 +226,11 @@
                 Ce que j’aime dans la data, ce n’est pas seulement écrire du code ou entraîner des modèles. C’est surtout le cheminement intellectuel : partir de données imparfaites, parfois désordonnées, et essayer d’en tirer quelque chose de compréhensible et d’utile.
             </p>
             <p>
-                Mon parcours en Sciences des Organisations et en Intelligence Artificielle m’a appris une chose essentielle : une analyse n’a de valeur que si elle peut être comprise et utilisée. J’essaie donc toujours de faire le lien entre la technique et les décisions réelles, en expliquant clairement ce que les données disent — et aussi ce qu’elles ne disent pas.
+                Mon parcours en Sciences des Organisations et en Intelligence Artificielle m’a appris une chose essentielle : une analyse n’a de valeur que si elle peut être comprise et utilisée. J’essaie donc toujours de faire le lien entre la technique et les décisions réelles.
             </p>
             
             <div class="highlight-box">
-                <strong>🎯 Objectif 2026 :</strong> Je souhaite poursuivre cette dynamique en intégrant un <strong>Master en Informatique et Data</strong> en alternance dès septembre prochain. Je recherche un poste de Data Scientist ou Data Analyst pour mettre ma double compétence au service de vos projets.
+                <strong>🎯 Objectif 2025 :</strong> Je souhaite poursuivre cette dynamique en intégrant un <strong>Master en Informatique et Data</strong> en alternance dès septembre prochain. Je recherche un poste de Data Scientist ou Data Analyst pour mettre ma double compétence au service de vos projets.
             </div>
         </div>
 
@@ -228,8 +249,11 @@
                 Ce projet de groupe a été une vraie immersion dans la réalité du travail sur les données. Avant toute modélisation, <strong>nous avons</strong> dû passer du temps à comprendre ce que les données représentaient réellement.
             </p>
             <p>
-                <strong>On s'est surtout concentrés</strong> sur la phase de préparation : repérer les incohérences, traiter les valeurs manquantes et sélectionner des variables pertinentes. Chaque choix devait être réfléchi et justifié collectivement, notamment lors des restitutions orales. Ce projet <strong>nous a appris</strong> que la qualité du raisonnement en amont est souvent plus déterminante que le choix du modèle lui-même.
+                <strong>On s'est surtout concentrés</strong> sur la phase de préparation : repérer les incohérences, traiter les valeurs manquantes et sélectionner des variables pertinentes. Chaque choix devait être réfléchi et justifié collectivement.
             </p>
+            <a href="ton-rapport-immo.pdf" class="btn-pdf" target="_blank">
+                📄 <span>Voir le rapport d'analyse</span>
+            </a>
         </div>
 
         <div class="project-card">
@@ -242,11 +266,14 @@
             </div>
             <p><strong>Du papier de recherche à l'explication orale</strong></p>
             <p>
-                Ce projet de groupe s'ancrait au cœur de l'IA Générative. Notre objectif était technique et ambitieux : partir d'un papier de recherche scientifique pour implémenter et améliorer un modèle de <strong>GAN (Generative Adversarial Network)</strong>.
+                Notre objectif était technique et ambitieux : partir d'un papier de recherche scientifique pour implémenter et améliorer un modèle de <strong>GAN (Generative Adversarial Network)</strong>.
             </p>
             <p>
-                Mais le défi n'était pas seulement le code. <strong>Nous avons dû</strong> décortiquer l'architecture complexe du modèle pour la rendre accessible et la <strong>vulgariser</strong> à l'oral devant une classe d'étudiants. Cet exercice <strong>nous a prouvé</strong> qu'on ne maîtrise vraiment un sujet technique que lorsqu'on est capable de l'expliquer simplement.
+                Mais le défi n'était pas seulement le code. <strong>Nous avons dû</strong> décortiquer l'architecture complexe du modèle pour la rendre accessible et la <strong>vulgariser</strong> à l'oral. Cet exercice nous a prouvé qu'on ne maîtrise vraiment un sujet technique que lorsqu'on est capable de l'expliquer simplement.
             </p>
+            <a href="ta-presentation-gan.pdf" class="btn-pdf" target="_blank">
+                📄 <span>Consulter la présentation</span>
+            </a>
         </div>
 
         <div class="project-card">
@@ -262,9 +289,9 @@
                 Ce projet part d’une curiosité personnelle : comment les maisons de luxe peuvent-elles utiliser la data sans perdre leur magie ?
             </p>
             <p>
-                Il n’y avait pas de données toutes faites. Mon travail a consisté à définir des critères pertinents (rareté, tendance), à réfléchir à leur importance relative et à construire une métrique cohérente. C’est un exercice de modélisation pure qui vise à transformer une idée qualitative en un outil d'aide à la décision.
+                Il n’y avait pas de données toutes faites. Mon travail a consisté à définir des critères pertinents (rareté, tendance), à réfléchir à leur importance relative et à construire une métrique cohérente. C’est un exercice de modélisation pure.
             </p>
-        </div>
+            </div>
 
         <div class="project-card">
             <div class="project-header">
@@ -281,6 +308,9 @@
             <p>
                 Le travail ne consistait pas seulement à créer des graphiques, mais à faire des choix ergonomiques pour permettre une compréhension rapide. J’ai appris à simplifier sans perdre le sens.
             </p>
+            <a href="ton-dashboard.pdf" class="btn-pdf" target="_blank">
+                📊 <span>Voir le Dashboard</span>
+            </a>
         </div>
 
         <h2>Expérience Entrepreneuriale</h2>
@@ -298,7 +328,7 @@
                 Pendant trois ans, en parallèle de mes études, j'ai vécu une expérience unique en fondant ma propre entreprise. En totale <strong>autodidacte</strong>, j'ai appris à gérer un cycle de produit complet : de la conception et la manufacture, jusqu'à la livraison finale au client.
             </p>
             <p>
-                Cette aventure a développé mon leadership et m'a confrontée à la réalité du terrain : <strong>négociation avec les fournisseurs, gestion rigoureuse des stocks et tenue de la comptabilité</strong>. C'est une école de la responsabilité qui complète parfaitement ma formation universitaire.
+                Cette aventure a développé mon leadership : <strong>négociation avec les fournisseurs, gestion rigoureuse des stocks et tenue de la comptabilité</strong>. C'est une école de la responsabilité.
             </p>
         </div>
 
@@ -308,7 +338,7 @@
                 Pour moi, une analyse ne s’arrête pas à un résultat chiffré. Il faut aussi savoir l’expliquer, le défendre et répondre aux questions qu’il soulève.
             </p>
             <p>
-                Lors des projets et des présentations, j’accorde beaucoup d’importance à la clarté du discours. J’essaie de rendre les raisonnements accessibles, d’adapter mon vocabulaire à mon interlocuteur et de structurer mes idées à l’oral.
+                Lors des projets et des présentations, j’accorde beaucoup d’importance à la clarté du discours. J’essaie de rendre les raisonnements accessibles et de structurer mes idées à l’oral.
             </p>
         </div>
 
@@ -320,5 +350,4 @@
 
 </body>
 </html>
-     
      
